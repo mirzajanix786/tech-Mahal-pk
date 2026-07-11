@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-onyx-950 text-platinum-200 font-body antialiased;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+    overflow-wrap: break-word;
+  }
+  ::selection {
+    @apply bg-gold-500/30 text-white;
+  }
+}
+
+@layer components {
+  .container-px {
+    @apply px-5 sm:px-6 lg:px-8;
+  }
+  .container-max {
+    @apply mx-auto w-full max-w-container container-px;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2.5 text-[11px] sm:text-xs font-semibold tracking-[0.22em] uppercase text-gold-300 mb-4;
+  }
+  .eyebrow::before {
+    content: "";
+    @apply w-4 h-px bg-gold-500;
+  }
+
+  .section-title {
+    @apply font-display font-semibold uppercase text-white leading-[1.12] tracking-wide;
+    font-size: clamp(1.9rem, 3.4vw, 2.9rem);
+  }
+  .section-title .accent {
+    @apply bg-gradient-to-r from-platinum-200 to-gold-300 bg-clip-text text-transparent;
+  }
+
+  .btn {
+    @apply relative inline-flex min-w-0 items-center justify-center gap-2 whitespace-normal text-center rounded-full font-semibold uppercase tracking-wider text-[13px] sm:text-sm px-7 py-3.5 transition-transform duration-300 ease-out overflow-hidden;
+  }
+  .btn-primary {
+    @apply btn bg-gradient-to-br from-gold-300 via-gold-500 to-gold-600 text-onyx-950 shadow-glow hover:-translate-y-0.5 active:translate-y-0;
+  }
+  .btn-ghost {
+    @apply btn bg-white/[0.04] text-white border border-white/10 backdrop-blur hover:border-gold-500/40 hover:bg-gold-500/[0.08] hover:-translate-y-0.5;
+  }
+  .btn-sm {
+    @apply px-5 py-2.5 text-xs;
+  }
+
+  .glass-card {
+    @apply bg-white/[0.04] border border-white/10 rounded-2xl backdrop-blur-xs;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border px-3 py-1 text-[10px] font-bold uppercase tracking-wider backdrop-blur;
+  }
+  .chip-sale {
+    @apply chip bg-signal-500/15 border-signal-500/40 text-signal-400;
+  }
+  .chip-gold {
+    @apply chip bg-gold-500/15 border-gold-500/40 text-gold-300;
+  }
+  .chip-muted {
+    @apply chip bg-white/10 border-white/15 text-platinum-300;
+  }
+
+  .input {
+    @apply w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white outline-none transition placeholder:text-platinum-500 focus:border-gold-500/50;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-none {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+}
