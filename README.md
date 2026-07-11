@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Tech Mahal PK — Premium Electronics Storefront
 
 A production-grade eCommerce storefront built with **Next.js 14 (App Router) + TypeScript + Tailwind CSS + Framer Motion**. Product catalog, pricing, categories and photography are sourced (with permission) from [themobilehub.store](https://themobilehub.store/) — reimagined into an entirely original, premium dark-theme design.
@@ -113,3 +114,7 @@ Zero-config on **Vercel** — push to GitHub, import the repo, deploy. Also work
 ---
 
 Designed & developed by **Cimple Tech**.
+=======
+# tech-Mahal-pk
+this is the e-commerence website 
+>>>>>>> 724c9557c51c637c3c1034bd0bc7007f9ac75f0b
