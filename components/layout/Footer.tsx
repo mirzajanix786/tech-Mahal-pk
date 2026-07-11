@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookF, FaInstagram, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
 import { siteConfig, navLinks, socialLinks } from "@/constants/site";
@@ -10,9 +11,13 @@ export default function Footer() {
       <div className="container-max grid grid-cols-1 gap-10 pb-14 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
         <div>
           <Link href="/" className="flex items-center gap-2.5">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-gold-300 to-gold-600 font-display text-sm font-bold text-onyx-950">
-              TM
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt="Tech Mahal Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-xl object-contain"
+            />
             <span className="font-display text-[15px] font-semibold uppercase tracking-wide text-white">
               {siteConfig.shortName}
             </span>

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { FiMenu, FiX, FiHeart, FiShoppingBag } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 import { siteConfig, navLinks } from "@/constants/site";
@@ -38,9 +39,14 @@ export default function Navbar() {
       >
         <div className="container-max flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-gold-300 to-gold-600 font-display text-sm font-bold text-onyx-950">
-              TM
-            </span>
+            <Image
+              src="/images/logo.png"
+              alt="Tech Mahal Logo"
+              width={40}
+              height={40}
+              className="h-10 w-10 rounded-xl object-contain"
+              priority
+            />
             <span className="hidden flex-col leading-tight sm:flex">
               <span className="font-display text-[15px] font-semibold uppercase tracking-wide text-white">
                 {siteConfig.shortName}
