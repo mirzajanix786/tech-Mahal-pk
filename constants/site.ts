@@ -5,8 +5,8 @@ export const siteConfig = {
   description:
     "Tech Mahal PK is Pakistan's premium destination for AirPods, smart watches, chargers, cables, power banks and everyday tech essentials — authentic products, unbeatable prices, and instant WhatsApp ordering.",
   url: "https://www.techmahalpk.com",
-  whatsappNumber: "923129217754",
-  whatsappDisplay: "+92 312 9217754",
+  whatsappNumber: "923451405336",
+  whatsappDisplay: "+92 345 1405336",
   currency: "PKR",
   currencySymbol: "Rs.",
 } as const;

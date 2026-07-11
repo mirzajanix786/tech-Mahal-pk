@@ -101,10 +101,10 @@ export default function Footer() {
             <li className="flex items-start gap-3">
               <FiMail className="mt-0.5 flex-shrink-0 text-gold-400" size={15} />
               <a
-                href="mailto:orders@techmahalpk.com"
+                href="mailto:techmahal.store@gmail.com"
                 className="text-sm text-platinum-400 hover:text-gold-300"
               >
-                orders@techmahalpk.com
+                techmahal.store@gmail.com
               </a>
             </li>
             <li className="flex items-start gap-3">
