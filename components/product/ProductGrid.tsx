@@ -21,7 +21,7 @@ export default function ProductGrid({ products, columns = 4 }: ProductGridProps)
 
   return (
     <>
-      <div className={`grid grid-cols-2 gap-3 sm:gap-5 ${gridCols}`}>
+      <div className="grid grid-cols-2 gap-3 sm:gap-5 sm:grid-cols-[repeat(auto-fill,minmax(220px,1fr))]">
         {products.map((product, i) => (
           <Reveal key={product.id} delay={Math.min(i, 4) * 0.06} y={20}>
             <ProductCard product={product} onQuickView={setQuickViewProduct} />
