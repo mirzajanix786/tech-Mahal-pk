@@ -32,8 +32,8 @@ export default function Navbar() {
     <>
       <header
         className={`fixed inset-x-0 top-0 z-[150] transition-all duration-300 ${scrolled
-            ? "bg-onyx-950/80 backdrop-blur-lg border-b border-white/10 py-3"
-            : "bg-transparent py-5"
+          ? "bg-onyx-950/80 backdrop-blur-lg border-b border-white/10 py-3"
+          : "bg-transparent py-5"
           }`}
       >
         <div className="container-max flex items-center justify-between gap-4">
@@ -43,7 +43,7 @@ export default function Navbar() {
               alt="Tech Mahal Logo"
               width={56}
               height={56}
-              className="h-10 w-10 rounded-xl object-contain"
+              className="h-14 w-14 rounded-xl object-contain"
               priority
             />
             <span className="hidden flex-col leading-tight sm:flex">
