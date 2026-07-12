@@ -31,19 +31,18 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`fixed inset-x-0 top-0 z-[150] transition-all duration-300 ${
-          scrolled
+        className={`fixed inset-x-0 top-0 z-[150] transition-all duration-300 ${scrolled
             ? "bg-onyx-950/80 backdrop-blur-lg border-b border-white/10 py-3"
             : "bg-transparent py-5"
-        }`}
+          }`}
       >
         <div className="container-max flex items-center justify-between gap-4">
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
             <Image
               src="/images/logo.png"
               alt="Tech Mahal Logo"
-              width={40}
-              height={40}
+              width={56}
+              height={56}
               className="h-10 w-10 rounded-xl object-contain"
               priority
             />

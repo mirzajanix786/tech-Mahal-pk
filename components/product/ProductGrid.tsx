@@ -16,8 +16,8 @@ export default function ProductGrid({ products, columns = 4 }: ProductGridProps)
 
   const gridCols =
     columns === 3
-      ? "sm:grid-cols-2 lg:grid-cols-3"
-      : "sm:grid-cols-2 lg:grid-cols-4";
+      ? "sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3"
+      : "sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5";
 
   return (
     <>
