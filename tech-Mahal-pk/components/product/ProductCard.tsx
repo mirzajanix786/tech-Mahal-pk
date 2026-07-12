@@ -52,7 +52,7 @@ export default function ProductCard({ product, onQuickView, priority }: ProductC
       whileHover={{ y: -8, scale: 1.02 }}
       whileTap={{ scale: 0.99 }}
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition-shadow duration-300 hover:border-gold-500/30 hover:shadow-card-hover"
+      className="group relative flex h-full cursor-pointer flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.03] transition-all duration-300 hover:border-blue-400/40 hover:shadow-[0_0_60px_10px_rgba(59,130,246,0.9)]"
     >
       {/* Media */}
       <div className="relative aspect-square w-full flex-shrink-0 overflow-hidden bg-gradient-to-br from-platinum-200 via-white to-platinum-300">

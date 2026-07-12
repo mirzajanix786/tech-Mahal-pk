@@ -14,14 +14,9 @@ interface ProductGridProps {
 export default function ProductGrid({ products, columns = 4 }: ProductGridProps) {
   const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null);
 
-  const gridCols =
-    columns === 3
-      ? "sm:grid-cols-2 lg:grid-cols-3"
-      : "sm:grid-cols-2 lg:grid-cols-4";
-
   return (
     <>
-      <div className={`grid grid-cols-2 gap-3 sm:gap-5 ${gridCols}`}>
+      <div className="grid grid-cols-2 gap-3 sm:gap-5 sm:grid-cols-[repeat(auto-fill,minmax(220px,1fr))]">
         {products.map((product, i) => (
           <Reveal key={product.id} delay={Math.min(i, 4) * 0.06} y={20}>
             <ProductCard product={product} onQuickView={setQuickViewProduct} />
